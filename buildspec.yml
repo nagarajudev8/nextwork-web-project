@@ -27,6 +27,8 @@ phases:
       - mvn -s settings.xml package
 
 artifacts:
+  type: zip
+  name: nextwork-web-project
   files:
     - target/nextwork-web-project.war
     - appspec.yml
