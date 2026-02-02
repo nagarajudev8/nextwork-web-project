@@ -4,6 +4,9 @@ phases:
   install:
     runtime-versions:
       java: corretto8
+    commands:
+      - echo Installing zip package...
+      - sudo dnf install -y zip
   pre_build:
     commands:
       - echo Logging in to AWS CodeArtifact...
